@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript"
+></script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<div class="w-full olorengradient pb-4 mb-4 -mt-4">
+  <div id="navbar-content" class="m-auto w-4/5 lg:w-2/3 mb-4">
+    {% include navbar-colored-bg.html %} {% include cta-content.html %}
+  </div>
+</div>
+
+<div>
+  <article class="prose lg:prose-lg m-auto max-w-none w-4/5 lg:w-2/3 mt-4">
+    <h1 class="font-extrabold text-lg text-black text-center">
+      {{ page.title }}
+    </h1>
+
+    {% assign author = site.data.authors[page.author] %} {% assign words =
+    page.content | strip_html | number_of_words %} {% assign ert = words |
+    divided_by:250 | at_least: 1 %}
+
+    <h5 class="font-normal text-center -mt-8 mb-4">
+      By {{ author.name }} • Published {{ page.date | date: "%B %-d, %Y" }} • {{
+      ert }} min read
+    </h5>
+
+    <div class="collapse collapse-arrow border border-base-300 rounded-2xl">
+      <input type="checkbox" />
+      <div class="collapse-title text-xl font-medium leading-none">
+        Table of Contents
+      </div>
+
+      <div class="collapse-content text-sm -mb-4 -mt-4">{% toc %}</div>
+    </div>
+
+    {{ content }}
+  </article>
+</div>

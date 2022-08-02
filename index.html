@@ -1,0 +1,132 @@
+---
+layout: default
+title: "Oloren AI"
+---
+
+<div class="w-screen bg-white flex flex-col">
+  <div class="m-auto w-4/5 lg:w-2/3 h-fit z-0">
+    <section
+      id="navbar"
+      class="w-full h-24 mt-4 text-black flex flex-row items-center space-x-16 text-xl"
+    >
+      <a class="w-fit h-full py-8" href="{{site.url}}">
+        <img src="{{ "/assets/images/oloren-dark-logo.svg" | relative_url }}"
+        class="h-full w-fit" id="logo" />
+      </a>
+      <a href="#oam">AutoML</a>
+      <a href="https://beta.oloren.ai">Analysis Suite</a>
+      <a href="#blogs">Blogs</a>
+    </section>
+  </div>
+
+  <section
+    id="hero"
+    class="m-auto w-4/5 lg:w-2/3 h-screen -mt-28 flex flex-col justify-center"
+  >
+    <div class="my-auto">
+      <h1 class="text-black text-4xl md:text-6xl font-black w-2/3">
+        Extract <mark class="gradient">actionable</mark>
+        <mark class="gradient">insights</mark> from assay data
+      </h1>
+
+      <h2 class="text-gray-400 text-xl md:text-2xl mt-2 w-3/5">
+        <mark class="text-black"> Accurately predict assay results </mark> from
+        historical chemical data,
+        <mark class="text-black">saving time and money</mark>
+        on experiments .
+      </h2>
+      <button
+        class="bg-blue-500 cursor-pointer text-white shadow-md p-3 px-4 rounded-full text-xl w-fit mt-4"
+        href="https://beta.oloren.ai"
+      >
+        Get Started Now
+      </button>
+    </div>
+  </section>
+
+  <section
+    class="m-auto w-4/5 lg:w-2/3 h-screen flex flex-col justify-center"
+    id="oam"
+  >
+    <div class="h-fit my-auto">
+      <h1 class="text-black text-3xl md:text-5xl font-bold">
+        Oloren AutoML (OAM)
+      </h1>
+      <h2 class="text-gray-400 text-xl md:text-2xl mt-2">
+        Our All-in-One Python Framework for QSAR
+      </h2>
+      <div id="oam-panels" class="flex flex-row space-x-12 h-fit mt-4 mb-2">
+        <div class="p-4 w-96 rounded-md shadow-md h-full ring ring-[#E5E5E5]">
+          <h2 class="text-xl md:text-2xl">SOTA Performance</h2>
+          Models built with OAM are at the top of every QSAR leaderboard,
+          including TDC, OGB, and more.
+          <br />
+          <br />
+          <div
+            class="w-full bg-gray-300 h-48 rounded-md mt-2 grid place-content-center"
+          >
+            BENCHMARK FIGURE GOES HERE
+          </div>
+        </div>
+        <div class="p-4 w-96 rounded-lg shadow-md h-full ring ring-[#E5E5E5]">
+          <h2 class="text-xl md:text-2xl">Open Source</h2>
+          OAM is more than 95% open source and designed extensabley, allowing
+          the community to build and improve upon it over time.
+          <div
+            class="w-full bg-gray-300 h-48 rounded-md mt-2 grid place-content-center"
+          >
+            OPEN SOURCE FIGURE HERE
+          </div>
+        </div>
+        <div class="p-4 w-96 rounded-lg shadow-md h-full ring ring-[#E5E5E5]">
+          <h2 class="text-xl md:text-2xl">Integrated with OAS</h2>
+          Models generated with OAM are modular, shareable, and backwards
+          compatible. With our Oloren Analysis Suite integration, models can be
+          shared with just a link.
+          <div
+            class="w-full bg-gray-300 h-48 rounded-md mt-2 grid place-content-center"
+          >
+            SHARING FIGURE HERE
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="bg-blue-500 cursor-pointer text-white shadow-md p-3 px-4 rounded-full text-xl w-fit mt-4"
+        href="https://beta.oloren.ai"
+      >
+        Open Docs
+      </button>
+
+      <button
+        class="bg-blue-500 cursor-pointer text-white shadow-md p-3 px-4 rounded-full text-xl w-fit mt-4 ml-2.5"
+        href="https://beta.oloren.ai"
+      >
+        View on GitHub
+      </button>
+    </div>
+  </section>
+
+  <section
+    class="m-auto w-4/5 lg:w-2/3 h-screen flex flex-col justify-center"
+    id="blogs"
+  >
+    <h1 class="text-black text-3xl md:text-5xl font-bold">Blogs</h1>
+    <h2 class="text-gray-400 text-xl md:text-2xl mt-2 mb-3">
+      Our All-in-One Python Framework for QSAR
+    </h2>
+    <div class="flex flex-col space-y-4 w-full h-fit">
+      {% for post in site.posts %}
+      <a
+        class="w-full h-fit shadow-md rounded-xl p-4 ring ring-[#E5E5E5]"
+        href="{{post.url}}"
+      >
+        <h1 class="font-bold text-xl md:text-2xl">{{post.title}}</h1>
+        <p class="text-gray-400 text-lg md:text-xl font-body">
+          {{post.excerpt}}
+        </p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+</div>
