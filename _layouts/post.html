@@ -43,7 +43,9 @@ layout: default
         Table of Contents
       </div>
 
-      <div class="collapse-content text-sm -mb-4 -mt-4">{% toc %}</div>
+      <div class="collapse-content text-sm -mb-4 -mt-4">
+        {{ content | toc_only }}
+      </div>
     </div>
 
     {{ content }}
