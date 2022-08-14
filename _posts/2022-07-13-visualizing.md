@@ -162,26 +162,22 @@ Here is a quick comparison of the different chemical representations and dimensi
 graph_chemical_space(df, smiles_col='mol', color_col='pIC50', id_col='CID', chem_rep='mf', dim_reduction='PCA', graph_title='Morgan Fingerprint + PCA')
 ```
 
-![](/assets/images/uncertainty-0.png)
 
 
 ```python
 graph_chemical_space(df, smiles_col='mol', color_col='pIC50', id_col='CID', chem_rep='mf', dim_reduction='TSNE', graph_title='Morgan Fingerprint + TSNE')
 ```
 
-![](/assets/images/uncertainty-1.png)
 
 ```python
 graph_chemical_space(df, smiles_col='mol', color_col='pIC50', id_col='CID', chem_rep='rdkit', dim_reduction='PCA', graph_title='RDKit Descriptors + PCA')
 ```
 
-![](/assets/images/uncertainty-2.png)
 
 ```python
 fig = graph_chemical_space(df, smiles_col='mol', color_col='pIC50', id_col='CID', chem_rep='rdkit', dim_reduction='TSNE', graph_title='RDKit Descriptors + TSNE')
 ```
 
-![](/assets/images/uncertainty-3.png)
 
 ## Creating Dash App
 
