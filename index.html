@@ -3,130 +3,179 @@ layout: default
 title: "Oloren AI"
 ---
 
-<div class="w-screen bg-white flex flex-col">
-  <div class="m-auto w-4/5 lg:w-2/3 h-fit z-0">
-    <section
-      id="navbar"
-      class="w-full h-24 mt-4 text-black flex flex-row items-center space-x-16 text-xl"
-    >
-      <a class="w-fit h-full py-8" href="{{site.url}}">
-        <img src="{{ "/assets/images/oloren-dark-logo.svg" | relative_url }}"
-        class="h-full w-fit" id="logo" />
-      </a>
-      <a href="{{site.baseurl}}#chemengine">Chem Engine</a>
-      <a href="https://beta.oloren.ai">Analysis Suite</a>
-      <a href="{{site.baseurl}}#blogs">Blogs</a>
-    </section>
-  </div>
-
+<div class="flex w-screen flex-col bg-white">
   <section
-    id="hero"
-    class="m-auto w-4/5 lg:w-2/3 h-screen -mt-28 flex flex-col justify-center"
+    id="navbar"
+    class="mx-auto mt-6 flex h-24 w-3/4 max-w-7xl items-center justify-between md:max-w-7xl"
   >
-    <div class="my-auto">
-      <h1 class="text-black text-4xl md:text-6xl font-black w-2/3">
-        Extract <mark class="gradient">actionable</mark>
-        <mark class="gradient">insights</mark> from assay data
-      </h1>
-
-      <h2 class="text-gray-400 text-xl md:text-2xl mt-2 w-3/5">
-        <mark class="text-black"> Accurately predict assay results </mark> from
-        historical chemical data,
-        <mark class="text-black">saving time and money</mark>
-        on experiments .
-      </h2>
-      <button
-        class="bg-blue-500 cursor-pointer text-white shadow-md p-3 px-4 rounded-full text-xl w-fit mt-4"
-        href="https://beta.oloren.ai"
+    <a class="h-1/4 w-fit" href="{{site.url}}">
+      <img src="{{ "/assets/images/logo.svg" | relative_url }}" class="h-full
+      w-fit" id="logo" />
+    </a>
+    <ul
+      id="links"
+      class="font-lg flex flex-row items-center space-x-10 text-[#525252]"
+    >
+      <a href="{{site.url}}/#technology">Technology</a>
+      <a href="{{site.url}}/#products">Products</a>
+      <a href="https://beta.oloren.ai">Demo</a>
+      <a href="{{site.url}}/#blogs">Blog</a>
+      <a
+        href="{{site.url}}/#blogs"
+        class="rounded-lg border-2 border-[#C8C8C8] px-6 py-2"
       >
-        Get Started Now
-      </button>
+        Contact Us
+      </a>
+    </ul>
+  </section>
+
+  <section id="hero" class="mx-auto flex h-[48em] w-3/4 max-w-7xl">
+    <div class="space-y-12 py-60">
+      <div id="hero-text" class="w-full space-y-5 pr-4">
+        <h1 class="w-full text-4xl font-normal text-black">
+          Extract <b class="font-semibold">actionable insights</b> <br />
+          from assay data.
+        </h1>
+
+        <h2 class="w-full text-lg text-[#525252]">
+          Accurately predict assay results from historical chemical data, <br />
+          saving time and money on experiments .
+        </h2>
+      </div>
+      <div class="space-x-8">
+        <button
+          class="oloren-gradient mt-4 w-fit cursor-pointer rounded-md p-3 px-10 text-lg text-white"
+          href="https://beta.oloren.ai"
+        >
+          Get Started
+        </button>
+        <a class="text-lg text-black"> Contact Us </a>
+      </div>
     </div>
   </section>
 
-  <section
-    class="m-auto w-4/5 lg:w-2/3 h-screen flex flex-col justify-center"
-    id="chemengine"
-  >
-    <div class="h-fit my-auto">
-      <h1 class="text-black text-3xl md:text-5xl font-bold">
-        Oloren ChemEngine
-      </h1>
-      <h2 class="text-gray-400 text-xl md:text-2xl mt-2">
-        Our All-in-One Python Framework for QSAR
-      </h2>
-      <div id="oam-panels" class="flex flex-row space-x-12 h-fit mt-4 mb-2">
-        <div class="p-4 w-96 rounded-md shadow-md h-full ring ring-[#E5E5E5]">
-          <h2 class="text-xl md:text-2xl">SOTA Performance</h2>
-          Models built with ChemEngine are at the top of every QSAR leaderboard,
-          including TDC, OGB, and more.
-          <br />
-          <br />
+  <section id="technology" class="h-fit w-full bg-[#F6F9FE] py-24">
+    <div class="m-auto flex w-3/4 flex-row justify-between md:max-w-7xl">
+      <h2 class="text-2xl font-medium">Technology</h2>
+      <div class="flex w-1/2 flex-col space-y-8">
+        <div class="flex flex-col space-y-4">
+          <h3 class="text-lg font-semibold">ChemEngine</h3>
+          <p class="text-lg text-[#525252]">
+            Our state-of-the-art molecular descriptor, which leverages
+            informations from millions of publically curated datasets, is
+            guaranteed to boost your prediction accuracy.
+          </p>
           <div
-            class="w-full bg-gray-300 h-48 rounded-md mt-2 grid place-content-center"
+            class="flex flex-row items-center space-x-3 child:h-fit child:w-fit child:rounded-xl"
           >
-            BENCHMARK FIGURE GOES HERE
+            <a
+              class="olorengradient p-px"
+              href="https://chemengine.org"
+              target="_blank"
+            >
+              <div class="flex flex-row rounded-xl bg-[#F6F9FE] px-6 py-3">
+                Visit Site
+                <i data-feather="arrow-up-right" class="pl-2"></i>
+              </div>
+            </a>
+            <a
+              class="olorengradient p-px"
+              href="https://chemrxiv.org/engage/chemrxiv/article-details/6350b9d186473a47d31a8492"
+              target="_blank"
+            >
+              <div class="flex flex-row rounded-xl bg-[#F6F9FE] px-6 py-3">
+                Download Paper
+                <i data-feather="download" class="pl-2"></i>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="p-4 w-96 rounded-lg shadow-md h-full ring ring-[#E5E5E5]">
-          <h2 class="text-xl md:text-2xl">Open Source</h2>
-          ChemEngine is fully open source and designed to be extensible,
-          allowing the community to build and improve upon it over time.
+        <div class="flex flex-col space-y-4">
+          <h3 class="text-lg font-semibold">OlorenVec Descriptors</h3>
+          <p class="text-lg text-[#525252]">
+            Our state-of-the-art molecular descriptor, which leverages
+            informations from millions of publically curated datasets, is
+            guaranteed to boost your prediction accuracy.
+          </p>
           <div
-            class="w-full bg-gray-300 h-48 rounded-md mt-2 grid place-content-center"
+            class="flex flex-row space-x-3 child:h-fit child:w-fit child:rounded-xl"
           >
-            OPEN SOURCE FIGURE HERE
-          </div>
-        </div>
-        <div class="p-4 w-96 rounded-lg shadow-md h-full ring ring-[#E5E5E5]">
-          <h2 class="text-xl md:text-2xl">Reproduce and Share</h2>
-          Models generated with OAM are reproducible and shareable. With our
-          Oloren Analysis Suite integration, models can be shared with just a
-          link.
-          <div
-            class="w-full bg-gray-300 h-48 rounded-md mt-2 grid place-content-center"
-          >
-            SHARING FIGURE HERE
+            <button class="olorengradient p-px">
+              <div class="flex flex-row rounded-xl bg-[#F6F9FE] px-6 py-3">
+                Download Presentation
+                <i data-feather="download" class="pl-2"></i>
+              </div>
+            </button>
           </div>
         </div>
       </div>
-
-      <button
-        class="bg-blue-500 cursor-pointer text-white shadow-md p-3 px-4 rounded-full text-xl w-fit mt-4"
-        href="https://beta.oloren.ai"
-      >
-        Open Docs
-      </button>
-
-      <button
-        class="bg-blue-500 cursor-pointer text-white shadow-md p-3 px-4 rounded-full text-xl w-fit mt-4 ml-2.5"
-        href="https://beta.oloren.ai"
-      >
-        View on GitHub
-      </button>
     </div>
   </section>
 
-  <section
-    class="m-auto w-4/5 lg:w-2/3 h-screen flex flex-col justify-center"
-    id="blogs"
-  >
-    <h1 class="text-black text-3xl md:text-5xl font-bold">Blogs</h1>
-    <h2 class="text-gray-400 text-xl md:text-2xl mt-2 mb-3">
-      Our All-in-One Python Framework for QSAR
-    </h2>
-    <div class="flex flex-col space-y-4 w-full h-fit">
-      {% for post in site.posts %}
-      <a
-        class="w-full h-fit shadow-md rounded-xl p-4 ring ring-[#E5E5E5]"
-        href="{{site.baseurl}}{{ post.url }}"
+  <section id="products" class="h-fit w-full bg-white py-24">
+    <div
+      class="mx-8 flex w-full flex-col space-y-4 md:m-auto md:w-3/4 md:max-w-7xl md:flex-row md:justify-between"
+    >
+      <div class="flex w-full flex-col space-y-3 md:w-1/3">
+        <h2 class="text-2xl font-medium">Products</h2>
+        <h3 class="text-lg font-normal text-[#525252]">
+          Oloren AI automatically fills in the blanks from your uploaded
+          experimental data, and predicts properties for given compounds.
+        </h3>
+      </div>
+      <div
+        class="flex w-1/2 flex-col space-y-10 child:flex child:flex-col child:space-y-4"
       >
-        <h1 class="font-bold text-xl md:text-2xl">{{post.title}}</h1>
-        <p class="text-gray-400 text-lg md:text-xl font-body">
-          {{post.excerpt}}
-        </p>
-      </a>
-      {% endfor %}
+        <div>
+          <img src="{{ "/assets/images/techicon.svg" | relative_url }}"
+          class="h-10 w-10 p-0 m-0" align="left" id="logo" />
+          <h3 class="text-lg font-semibold">ChemEngine Enterprise</h3>
+          <p class="text-lg text-[#525252]">
+            We've built a suite of Python Libraries, leveraging our proprietary
+            automated machine learning frameworks, to simplify the tedious
+            process of finding the best model for your dataset.
+          </p>
+        </div>
+
+        <div>
+          <img src="{{ "/assets/images/techicon.svg" | relative_url }}"
+          class="h-10 w-10 p-0 m-0" align="left" id="logo" />
+          <h3 class="text-lg font-semibold">Analysis Suite</h3>
+          <p class="text-lg text-[#525252]">
+            No experience is necessary to make use of the Oloren Analysis Suite,
+            which bundles our propietary technology in an easy-to-use graphical
+            interface.
+          </p>
+          <a
+            class="flex flex-row text-lg font-medium"
+            href="https://chemengine.org"
+            >Contact Us <i data-feather="arrow-up-right" class="ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer" class="h-fit w-full bg-[#F6F9FE] py-24">
+    <div class="m-auto flex w-3/4 flex-row justify-between md:max-w-7xl">
+      <div>
+        <img src="{{ "/assets/images/logo.svg" | relative_url }}" class="h-5
+        w-auto"/>
+      </div>
+
+      <div
+        id="links"
+        class="font-lg flex flex-col items-start space-y-2 text-left text-[#525252]"
+      >
+        <a href="{{site.url}}/#technology">Technology</a>
+        <a href="{{site.url}}/#products">Products</a>
+        <a href="https://beta.oloren.ai">Demo</a>
+        <a href="{{site.url}}/#blogs">Blog</a>
+      </div>
+
+      <button class="olorengradient h-fit w-fit rounded-xl p-px">
+        <div class="rounded-xl bg-[#F6F9FE] px-8 py-3">Contact Us</div>
+      </button>
     </div>
   </section>
 </div>
