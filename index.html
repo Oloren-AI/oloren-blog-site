@@ -5,8 +5,32 @@ title: "Oloren AI"
 
 <div class="flex w-screen flex-col bg-white text-primary">
   <section
+    id="mobile-navbar"
+    class="flex h-fit w-full flex-row justify-between px-4 pt-4 lg:hidden"
+  >
+    <a class="h-6 w-fit" href="{{site.url}}">
+      <img src="{{ "/assets/images/logo.svg" | relative_url }}" class="h-full
+      w-fit" id="logo" />
+    </a>
+    <div class="flex h-full flex-col items-end">
+      <input class="burger-check" id="burger-check" type="checkbox" /><label
+        for="burger-check"
+        class="burger"
+      ></label>
+      <nav
+        id="navigation1"
+        class="float navigation flex flex-col items-end px-1"
+      >
+        <a href="{{site.url}}/#technology">Technology</a>
+        <a href="{{site.url}}/#products">Products</a>
+        <a href="https://beta.oloren.ai">Demo</a>
+        <a href="{{site.url}}/#blogs">Blog</a>
+      </nav>
+    </div>
+  </section>
+  <section
     id="navbar"
-    class="mx-auto mt-6 flex h-24 w-3/4 max-w-7xl items-center justify-between md:max-w-7xl"
+    class="mx-auto mt-6 hidden h-24 w-3/4 max-w-7xl items-center justify-between md:max-w-7xl lg:flex"
   >
     <a class="h-1/4 w-fit" href="{{site.url}}">
       <img src="{{ "/assets/images/logo.svg" | relative_url }}" class="h-full
@@ -21,28 +45,28 @@ title: "Oloren AI"
       <a href="https://beta.oloren.ai">Demo</a>
       <a href="{{site.url}}/#blogs">Blog</a>
       <a
-        href="{{site.url}}/#blogs"
-        class="rounded-lg border-2 border-[#C8C8C8] px-6 py-2"
+        class="olorengradient h-fit w-fit rounded-xl p-px"
+        href="mailto:contact@oloren.ai"
       >
-        Contact Us
+        <div class="rounded-[11px] bg-white px-5 py-3">Contact Us</div>
       </a>
     </ul>
   </section>
 
   <section
     id="hero"
-    class="mx-auto flex h-[48em] w-3/4 max-w-7xl justify-between"
+    class="mx-auto flex h-fit w-full max-w-7xl justify-between px-5 lg:w-3/4"
   >
-    <div class="space-y-12 py-60">
+    <div class="space-y-5 py-16 lg:space-y-12 lg:py-60">
       <div id="hero-text" class="w-full space-y-5 pr-4">
-        <h1 class="w-full text-4xl font-normal text-primary">
-          Extract <b class="font-semibold">actionable insights</b> <br />
+        <h1 class="w-full text-4xl font-normal text-primary lg:w-[65%]">
+          Extract <b class="font-semibold">actionable insights</b>
           from assay data.
         </h1>
 
         <h2 class="w-full text-lg text-secondary">
           Accurately predict assay results from historical chemical data, <br />
-          saving time and money on experiments .
+          saving time and money on experiments.
         </h2>
       </div>
       <div class="space-x-8">
@@ -55,14 +79,16 @@ title: "Oloren AI"
         <a class="text-lg text-primary"> Contact Us </a>
       </div>
     </div>
-    <img src="{{ "/assets/images/herofig.svg" | relative_url }}" class="w-2/5
-    mx-0" align="left" id="logo" />
+    <img src="{{ "/assets/images/herofig.svg" | relative_url }}" class="hidden
+    lg:block w-2/5 mx-0" align="left" id="logo" />
   </section>
 
-  <section id="technology" class="h-fit w-full bg-[#F6F9FE] py-24">
-    <div class="m-auto flex w-3/4 flex-row justify-between md:max-w-7xl">
+  <section id="technology" class="h-fit w-full bg-[#F6F9FE] py-16 lg:py-24">
+    <div
+      class="m-auto flex w-full flex-col justify-between space-y-8 px-5 md:max-w-7xl lg:w-3/4 lg:flex-row"
+    >
       <h2 class="text-2xl font-medium">Technology</h2>
-      <div class="flex w-1/2 flex-col space-y-8">
+      <div class="flex w-full flex-col space-y-8 lg:w-1/2">
         <div class="flex flex-col space-y-4">
           <h3 class="text-lg font-semibold">ChemEngine</h3>
           <p class="text-lg text-secondary">
@@ -71,7 +97,7 @@ title: "Oloren AI"
             guaranteed to boost your prediction accuracy.
           </p>
           <div
-            class="flex flex-row items-center space-x-3 child:h-fit child:w-fit child:rounded-xl"
+            class="flex flex-col space-y-2 child:h-fit child:w-fit child:rounded-xl lg:flex-row lg:items-center lg:space-x-3"
           >
             <a
               class="olorengradient p-px"
@@ -103,7 +129,7 @@ title: "Oloren AI"
             guaranteed to boost your prediction accuracy.
           </p>
           <div
-            class="flex flex-row space-x-3 child:h-fit child:w-fit child:rounded-xl"
+            class="flex flex-col space-y-2 space-x-3 child:h-fit child:w-fit child:rounded-xl lg:flex-row"
           >
             <button class="olorengradient p-px">
               <div class="flex flex-row rounded-[11px] bg-[#F6F9FE] px-6 py-3">
@@ -117,11 +143,11 @@ title: "Oloren AI"
     </div>
   </section>
 
-  <section id="products" class="h-fit w-full bg-white py-24">
+  <section id="products" class="h-fit w-full bg-white py-16 lg:py-24">
     <div
-      class="mx-8 flex w-full flex-col space-y-4 md:m-auto md:w-3/4 md:max-w-7xl md:flex-row md:justify-between"
+      class="m-auto flex w-full flex-col justify-between space-y-8 px-5 md:max-w-7xl lg:w-3/4 lg:flex-row"
     >
-      <div class="flex w-full flex-col space-y-3 md:w-1/3">
+      <div class="flex w-full flex-col space-y-3 lg:w-1/3">
         <h2 class="text-2xl font-medium">Products</h2>
         <h3 class="text-lg font-normal text-secondary">
           Oloren AI automatically fills in the blanks from your uploaded
@@ -129,7 +155,7 @@ title: "Oloren AI"
         </h3>
       </div>
       <div
-        class="flex w-1/2 flex-col space-y-10 child:flex child:flex-col child:space-y-4"
+        class="flex w-full flex-col space-y-10 child:flex child:flex-col child:space-y-4 lg:w-1/2"
       >
         <div>
           <img src="{{ "/assets/images/techicon.svg" | relative_url }}"
@@ -140,6 +166,11 @@ title: "Oloren AI"
             automated machine learning frameworks, to simplify the tedious
             process of finding the best model for your dataset.
           </p>
+          <a
+            class="flex flex-row text-lg font-medium"
+            href="mailto:contact@oloren.ai"
+            >Contact Us <i data-feather="arrow-up-right" class="ml-1"></i>
+          </a>
         </div>
 
         <div>
@@ -153,7 +184,7 @@ title: "Oloren AI"
           </p>
           <a
             class="flex flex-row text-lg font-medium"
-            href="https://chemengine.org"
+            href="mailto:contact@oloren.ai"
             >Contact Us <i data-feather="arrow-up-right" class="ml-1"></i>
           </a>
         </div>
@@ -161,8 +192,10 @@ title: "Oloren AI"
     </div>
   </section>
 
-  <section id="footer" class="h-fit w-full bg-[#F6F9FE] py-24">
-    <div class="m-auto flex w-3/4 flex-row justify-between md:max-w-7xl">
+  <section id="footer" class="h-fit w-full bg-[#F6F9FE] py-16 lg:py-24">
+    <div
+      class="m-auto flex flex-col items-center justify-between space-y-8 md:w-3/4 md:max-w-7xl md:flex-row md:space-y-0"
+    >
       <div>
         <img src="{{ "/assets/images/logo.svg" | relative_url }}" class="h-5
         w-auto"/>
@@ -170,7 +203,7 @@ title: "Oloren AI"
 
       <div
         id="links"
-        class="font-lg flex flex-col items-start space-y-2 text-left text-secondary"
+        class="font-lg flex flex-col items-center space-y-2 text-left text-secondary md:items-start"
       >
         <a href="{{site.url}}/#technology">Technology</a>
         <a href="{{site.url}}/#products">Products</a>
