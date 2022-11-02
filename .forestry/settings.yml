@@ -10,8 +10,8 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-upload_dir: media
-public_path: https://oloren-blogcontent.s3.us-east-2.amazonaws.com
+upload_dir: assets/images
+public_path: ''
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
