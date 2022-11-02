@@ -7,15 +7,13 @@ layout: default
   id="featured-blog"
   class="mx-auto flex h-fit w-full max-w-7xl justify-between px-5 lg:w-3/4"
 >
-  <div class="w-1/2 space-y-4 py-16 lg:py-48 align-middle">
+  <div class="w-1/2 space-y-4 py-16 align-middle lg:py-48">
     <div id="hero-text" class="w-full space-y-5">
       <h3 class="">Featured Story</h3>
       <h1 class="w-full text-2xl font-normal text-primary">
         {{site.posts[0].title}}
       </h1>
-      <h2 class="w-full text-lg text-secondary">
-        {{site.posts[0].excerpt}}
-      </h2>
+      <h2 class="w-full text-lg text-secondary">{{site.posts[0].excerpt}}</h2>
     </div>
     <div class="space-x-8">
       <button
@@ -26,19 +24,23 @@ layout: default
       </button>
     </div>
   </div>
-  <div class="w-1/2 h-fit my-auto">
-  <img src={{ site.posts[0].featured_image | relative_url }} class="
-  block w-full h-auto bg-red" align="left" id="logo" />
+  <div class="my-auto h-fit w-1/2 ml-8">
+    <img
+      src={{site.posts[0].featured_image}}
+      class="bg-red block h-auto w-full rounded-xl"
+      align="left"
+      id="logo"
+    />
   </div>
 </section>
 
 <section
   id="blog-listing"
-  class="mx-auto mb-20 flex flex-col space-y-2 lg:space-y-0 lg:grid h-fit w-full max-w-7xl lg:grid-cols-3 lg:gap-x-6 lg:gap-y-12 lg:w-3/4"
+  class="mx-auto mb-20 flex h-fit w-full max-w-7xl flex-col space-y-2 lg:grid lg:w-3/4 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-12 lg:space-y-0"
 >
-    {% for post in site.posts %}
+  {% for post in site.posts %}
   <a class="flex h-fit flex-col space-y-2" href={{ post.url }}>
-    <img class="h-64 w-full bg-[#F6F9FE]" src={{ post.featured_image | relative_url }} />
+    <img class="h-64 w-full bg-[#F6F9FE]" src={{ post.featured_image }} />
     <h1 class="w-full text-xl font-normal text-primary">{{post.title}}</h1>
     <h2 class="w-full pr-8 text-lg text-secondary">{{post.excerpt}}</h2>
   </a>
