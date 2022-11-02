@@ -1,0 +1,45 @@
+---
+layout: default
+title: "Oloren AI Blogs"
+---
+
+<section
+  id="featured-blog"
+  class="mx-auto flex h-fit w-full max-w-7xl justify-between px-5 lg:w-3/4"
+>
+  <div class="w-3/5 space-y-4 py-16 lg:py-60">
+    <div id="hero-text" class="w-full space-y-5 pr-4">
+      <h3 class="">Featured Story</h3>
+      <h1 class="w-full text-2xl font-normal text-primary">
+        Evaluating Model Uncertainty with Oloren ChemEngine
+      </h1>
+      <h2 class="w-full pr-8 text-lg text-secondary lg:w-2/3">
+        This guide walks through creating error models to assess the uncertainty
+        of Oloren ChemEngine models.
+      </h2>
+    </div>
+    <div class="space-x-8">
+      <button
+        class="oloren-gradient mt-4 w-fit cursor-pointer rounded-md p-3 px-10 text-lg text-white"
+        href="https://beta.oloren.ai"
+      >
+        Read More
+      </button>
+    </div>
+  </div>
+  <img src="{{ "/assets/images/herofig.svg" | relative_url }}" class="hidden
+  lg:block w-2/5 mx-0" align="left" id="logo" />
+</section>
+
+<section
+  id="blog-listing"
+  class="mx-auto mb-20 grid h-fit w-full max-w-7xl grid-cols-3 gap-x-6 gap-y-12 lg:w-3/4"
+>
+  {% for x in (1..3) %} {% for post in site.posts %}
+  <div class="flex h-fit flex-col space-y-2">
+    <div class="h-64 w-full bg-[#F6F9FE]"></div>
+    <h1 class="w-full text-xl font-normal text-primary">{{post.title}}</h1>
+    <h2 class="w-full pr-8 text-lg text-secondary">{{post.excerpt}}</h2>
+  </div>
+  {% endfor %} {% endfor %}
+</section>

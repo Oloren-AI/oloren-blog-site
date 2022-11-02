@@ -3,55 +3,6 @@ layout: default
 title: "Oloren AI"
 ---
 
-<div class="flex w-screen flex-col bg-white text-primary">
-  <section
-    id="mobile-navbar"
-    class="flex h-fit w-full flex-row justify-between px-4 pt-4 lg:hidden"
-  >
-    <a class="h-6 w-fit" href="{{site.url}}">
-      <img src="{{ "/assets/images/logo.svg" | relative_url }}" class="h-full
-      w-fit" id="logo" />
-    </a>
-    <div class="flex h-full flex-col items-end">
-      <input class="burger-check" id="burger-check" type="checkbox" /><label
-        for="burger-check"
-        class="burger"
-      ></label>
-      <nav
-        id="navigation1"
-        class="float navigation flex flex-col items-end px-1"
-      >
-        <a href="{{site.url}}/#technology">Technology</a>
-        <a href="{{site.url}}/#products">Products</a>
-        <a href="https://beta.oloren.ai">Demo</a>
-        <a href="{{site.url}}/#blogs">Blog</a>
-      </nav>
-    </div>
-  </section>
-  <section
-    id="navbar"
-    class="mx-auto mt-6 hidden h-24 w-3/4 max-w-7xl items-center justify-between md:max-w-7xl lg:flex"
-  >
-    <a class="h-1/4 w-fit" href="{{site.url}}">
-      <img src="{{ "/assets/images/logo.svg" | relative_url }}" class="h-full
-      w-fit" id="logo" />
-    </a>
-    <ul
-      id="links"
-      class="font-lg flex flex-row items-center space-x-10 text-secondary"
-    >
-      <a href="{{site.url}}/#technology">Technology</a>
-      <a href="{{site.url}}/#products">Products</a>
-      <a href="https://beta.oloren.ai">Demo</a>
-      <a href="{{site.url}}/#blogs">Blog</a>
-      <a
-        class="olorengradient h-fit w-fit rounded-xl p-px"
-        href="mailto:contact@oloren.ai"
-      >
-        <div class="rounded-[11px] bg-white px-5 py-3">Contact Us</div>
-      </a>
-    </ul>
-  </section>
 
   <section
     id="hero"
@@ -192,28 +143,4 @@ title: "Oloren AI"
     </div>
   </section>
 
-  <section id="footer" class="h-fit w-full bg-[#F6F9FE] py-16 lg:py-24">
-    <div
-      class="m-auto flex flex-col items-center justify-between space-y-8 md:w-3/4 md:max-w-7xl md:flex-row md:space-y-0"
-    >
-      <div>
-        <img src="{{ "/assets/images/logo.svg" | relative_url }}" class="h-5
-        w-auto"/>
-      </div>
-
-      <div
-        id="links"
-        class="font-lg flex flex-col items-center space-y-2 text-left text-secondary"
-      >
-        <a href="{{site.url}}/#technology">Technology</a>
-        <a href="{{site.url}}/#products">Products</a>
-        <a href="https://beta.oloren.ai">Demo</a>
-        <a href="{{site.url}}/#blogs">Blog</a>
-      </div>
-
-      <button class="olorengradient h-fit w-fit rounded-xl p-px">
-        <div class="rounded-[11px] bg-[#F6F9FE] px-8 py-3">Contact Us</div>
-      </button>
-    </div>
-  </section>
 </div>
