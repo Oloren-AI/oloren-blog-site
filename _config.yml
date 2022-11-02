@@ -1,12 +1,18 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
-
+---
+title: Oloren Blog Site
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+url: ''
+baseurl: ''
 markdown: kramdown
-
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
 plugins:
-  - jekyll-toc
+- jekyll-toc
