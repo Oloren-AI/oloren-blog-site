@@ -5,17 +5,31 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: post
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Title of Post
+  description: Title of the Post (make sure to not duplicate this by adding it to
+    the post content!)
 - type: textarea
   name: excerpt
-  label: excerpt
+  label: Excerpt
+  description: 1-2 sentence description of the post.
 - type: boolean
   name: toc
-  label: toc
+  label: Table of Contents
+  description: Enable for longer posts that might benefit from navigation.
 - type: text
   name: author
-  label: author
+  label: Author Name
+  description: Enter author name here
+- name: featured_image
+  type: file
+  config:
+    maxSize: 64
+  label: Featured Image
+  description: Upload a featured image for the blog post! Something around 350 (width)
+    x 200 (height) is preferred.
 pages:
 - _posts/developing-the-best-molecular-property-predictors.md
