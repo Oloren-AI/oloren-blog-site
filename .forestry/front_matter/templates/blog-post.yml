@@ -33,3 +33,4 @@ fields:
     x 200 (height) is preferred.
 pages:
 - _posts/developing-the-best-molecular-property-predictors.md
+- _posts/uncertainty-post.md
