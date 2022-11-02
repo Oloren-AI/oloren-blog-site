@@ -2,10 +2,14 @@
 title: Visualizing the chemical space
 date: 2022-06-29 00:00:00 Z
 layout: post
-excerpt: After creating models for drug classification, we need a practical way of visualizing our chemical space and verifying our results. This guide will walk you through how to generate an interactive plotly graph of chemicals that renders 2D images of molecules on hover. A good library for this is molplotly, and the below tutorial teaches you how to write and customize your own code for this.
+excerpt: After creating models for drug classification, we need a practical way of
+  visualizing our chemical space and verifying our results. This guide will walk you
+  through how to generate an interactive plotly graph of chemicals that renders 2D
+  images of molecules on hover. A good library for this is molplotly, and the below
+  tutorial teaches you how to write and customize your own code for this.
 toc: false
 author: Melissa Du
-featured_image: "https://oloren-blogcontent.s3.us-east-2.amazonaws.com/visualizing/fig4.png"
+featured_image: https://oloren-blogcontent.s3.us-east-2.amazonaws.com/visualizing/fig4.png
 ---
 
 We will cover two different types of chemical representations (Morgan fingerprint and RDKit 2D molecular descriptors), two different techniques for dimension reduction (PCA and t-SNE), generating a scatterplot in plotly, and creating an interactive Dash app which displays structures on hover. We'll be using the BACE dataset from MoleculeNet. All of the code is located in our “Putting Everything Together” section at the end, but we recommend reading through the sections to fully understand how everything works.
