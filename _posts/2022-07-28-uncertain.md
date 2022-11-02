@@ -2,10 +2,11 @@
 title: Evaluating Model Uncertainty with Oloren ChemEngine
 date: 2022-07-28 00:00:00 Z
 layout: post
-excerpt: A summary of the BaseErrorModel class in Oloren ChemEngine that constructs error models for predicting error bars.
+excerpt: A summary of the BaseErrorModel class in Oloren ChemEngine that constructs
+  error models for predicting error bars.
 toc: false
 author: Alex Li
-featured_image: "https://oloren-blogcontent.s3.us-east-2.amazonaws.com/uncertainty.png"
+featured_image: https://oloren-blogcontent.s3.us-east-2.amazonaws.com/uncertainty.png
 ---
 
 For many practical applications, training a machine learning model is only the first half of the story. Especially in a field with stakes as high as drug screening and development, being able to assess the certainty of a prediction is essential to evaluating and deploying models in the real world. In this post, we introduce the `BaseErrorModel` class, a library of different methods for evaluating the uncertainty of model predictions, generalizable to any model architecture. No matter how well your model performs, no model is perfect, and being able to see when a model might be making poor predictions is a critical tool for the widespread adoption of AI in drug discovery.
