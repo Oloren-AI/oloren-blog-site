@@ -2,10 +2,14 @@
 title: Introduction to Scaffold Splitting
 date: 2022-07-11 00:00:00 Z
 layout: post
-excerpt: Discrepancies between the data a model encounters in production and in development necessitate a solid understanding of model generalizability to make sure that we are building models that are truly useful in production. This blog explains and visualizes the concept of scaffold splitting, a method to split datasets and test model generalizability.
+excerpt: Discrepancies between the data a model encounters in production and in development
+  necessitate a solid understanding of model generalizability to make sure that we
+  are building models that are truly useful in production. This blog explains and
+  visualizes the concept of scaffold splitting, a method to split datasets and test
+  model generalizability.
 toc: false
 author: Andrew Li
-featured_image: "https://oloren-blogcontent.s3.us-east-2.amazonaws.com/scaffold/split-perf.png"
+featured_image: https://oloren-blogcontent.s3.us-east-2.amazonaws.com/scaffold/split-perf.png
 ---
 
 # Introduction
