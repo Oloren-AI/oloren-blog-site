@@ -18,7 +18,7 @@ layout: default
 
 
 <div>
-  <article class="prose lg:prose-lg m-auto max-w-none w-3/5 mt-4">
+  <article class="prose lg:prose-lg m-auto max-w-none w-1/2 mt-4">
     {% assign author = site.data.authors[page.author] %} {% assign words =
     page.content | strip_html | number_of_words %} {% assign ert = words |
     divided_by:250 | at_least: 1 %}
@@ -49,7 +49,7 @@ layout: default
       </div>
     </div> -->
 
-    <div class="font-normal prose-h1:!text-xl prose-h2:!text-lg prose-h3:!text-base prose-headings:font-medium prose-headings:!text-primary !text-secondary prose-figcaption:text-center prose-figcaption:text-primary prose-figure:w-full">
+    <div class="font-normal prose-strong:text-secondary prose-h1:!text-xl prose-h2:!text-lg prose-h3:!text-base prose-headings:font-medium prose-headings:!text-primary !text-secondary prose-figcaption:text-center prose-figcaption:text-primary prose-figure:w-full">
       {{ content }}
     </div>
   </article>

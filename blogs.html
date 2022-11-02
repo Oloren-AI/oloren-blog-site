@@ -15,16 +15,15 @@ layout: default
       </h1>
       <h2 class="w-full text-lg text-secondary">{{site.posts[0].excerpt}}</h2>
     </div>
-    <div class="space-x-8">
+    <a class="space-x-8" href="{{ site.posts[0].url }}">
       <button
         class="oloren-gradient mt-4 w-fit cursor-pointer rounded-md p-3 px-10 text-lg text-white"
-        href="https://beta.oloren.ai"
       >
         Read More
       </button>
-    </div>
+    </a>
   </div>
-  <div class="my-auto h-fit w-1/2 ml-8">
+  <div class="my-auto h-fit w-1/2 ml-8" >
     <img
       src={{site.posts[0].featured_image}}
       class="bg-red block h-auto w-full rounded-xl"
@@ -40,7 +39,7 @@ layout: default
 >
   {% for post in site.posts %}
   <a class="flex h-fit flex-col space-y-2" href={{ post.url }}>
-    <img class="h-64 w-full bg-[#F6F9FE]" src={{ post.featured_image }} />
+    <img class="h-64 w-auto bg-[#F6F9FE]" src={{ post.featured_image }} />
     <h1 class="w-full text-xl font-normal text-primary">{{post.title}}</h1>
     <h2 class="w-full pr-8 text-lg text-secondary">{{post.excerpt}}</h2>
   </a>

@@ -9,14 +9,13 @@ featured_image: "https://oloren-blogcontent.s3.us-east-2.amazonaws.com/scaffold/
 ---
 
 # Introduction
-The chemical space of potentially “drug-like,” pharmacologically active molecules is huge, estimated at 10^60. Evaluating even the restricted chemical space around a particular molecular scaffold can be time and resource-intensive. Machine learning approaches aiming to learn relationships between molecules and the property in question can dramatically accelerate the screening process by recognizing abstract and higher-order molecular characteristics in already screened molecules associated with their bioactivity. This allows for better selectivity in future experiments, giving researchers information on which molecules are most and least likely to have the desired properties.
+The chemical space of potentially “drug-like,” pharmacologically active molecules is huge, estimated at $10^{60}$. Evaluating even the restricted chemical space around a particular molecular scaffold can be time and resource-intensive. Machine learning approaches aiming to learn relationships between molecules and the property in question can dramatically accelerate the screening process by recognizing abstract and higher-order molecular characteristics in already screened molecules associated with their bioactivity. This allows for better selectivity in future experiments, giving researchers information on which molecules are most and least likely to have the desired properties.
 
 
 ![]()
 {% include image.html url= "https://oloren-blogcontent.s3.us-east-2.amazonaws.com/scaffold/scaffold-split-intro.png"
    style="width: 60%; height: auto;"
-   description="Fig 1. 3D Visualization of over 6000 DrugBank molecules across 5 different properties (Awale and Reymond 2016).¹
-Models"
+   description="Fig 1. 3D Visualization of over 6000 DrugBank molecules across 5 different properties (Awale and Reymond 2016).¹"
     %}
 
 Models, however, are as good as the data they were trained on. An experienced dendrologist may be able to classify almost all known tree species in the world, and a paleontologist could determine heaps of information from a dinosaur’s collarbone. Switch their roles and neither would have a clue at the task before them. ML models suffer from the same problem in cases where data they encounter in wild, real-world use, differ fundamentally from the data they were trained on, leading potentially to inaccurate and misleading predictions.
