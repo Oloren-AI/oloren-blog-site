@@ -2,21 +2,16 @@
 title: Introduction to Scaffold Splitting
 date: 2022-07-11 00:00:00 Z
 layout: post
-excerpt: Discrepancies between the data a model encounters in production and in development
-  necessitate a solid understanding of model generalizability to make sure that we
-  are building models that are truly useful in production. This blog explains and
-  visualizes the concept of scaffold splitting, a method to split datasets and test
-  model generalizability.
+excerpt: Discrepancies between the data a model encounters in production and in development necessitate a solid understanding of model generalizability to make sure that we are building models that are truly useful in production. This blog explains and visualizes the concept of scaffold splitting, a method to split datasets and test model generalizability.
 toc: false
 author: Andrew Li
-featured_image: https://oloren-blogcontent.s3.us-east-2.amazonaws.com/scaffold/split-perf.png
+featured_image: "https://oloren-blogcontent.s3.us-east-2.amazonaws.com/scaffold/split-perf.png"
 ---
 
 # Introduction
 The chemical space of potentially “drug-like,” pharmacologically active molecules is huge, estimated at $10^{60}$. Evaluating even the restricted chemical space around a particular molecular scaffold can be time and resource-intensive. Machine learning approaches aiming to learn relationships between molecules and the property in question can dramatically accelerate the screening process by recognizing abstract and higher-order molecular characteristics in already screened molecules associated with their bioactivity. This allows for better selectivity in future experiments, giving researchers information on which molecules are most and least likely to have the desired properties.
 
 
-![]()
 {% include image.html url= "https://oloren-blogcontent.s3.us-east-2.amazonaws.com/scaffold/scaffold-split-intro.png"
    style="width: 60%; height: auto;"
    description="Fig 1. 3D Visualization of over 6000 DrugBank molecules across 5 different properties (Awale and Reymond 2016).¹"
