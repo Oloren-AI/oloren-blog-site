@@ -1,7 +1,9 @@
 ---
+title: Visualizing Chemical Space
+date: 2022-07-13 00:00:00 Z
 layout: post
-title:  "Visualizing Chemical Space"
-excerpt: "This guide will walk you through how to generate an interactive plotly graph of chemicals that renders 2D images of molecules on hover."
+excerpt: This guide will walk you through how to generate an interactive plotly graph
+  of chemicals that renders 2D images of molecules on hover.
 toc: true
 author: melissa
 ---

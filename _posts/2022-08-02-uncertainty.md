@@ -1,7 +1,9 @@
 ---
+title: Evaluating Model Uncertainty with Oloren AutoML
+date: 2022-08-02 00:00:00 Z
 layout: post
-title:  "Evaluating Model Uncertainty with Oloren AutoML"
-excerpt: "This guide explores predicting the uncertainty of QSAR predictions with some help from Oloren's OAM library."
+excerpt: This guide explores predicting the uncertainty of QSAR predictions with some
+  help from Oloren's OAM library.
 toc: true
 author: alex
 ---

@@ -1,12 +1,13 @@
 ---
-layout: post
 title: Developing the ‘best’ molecular property predictors
+date: 2022-11-02 00:00:00 Z
+layout: post
 excerpt: We are releasing a new site and platform for benchmarking molecular property
   predictors across many open benchmarks.
 toc: false
 author: David Huang
-
 ---
+
 ### Benchmarking efforts and site
 
 We recently released a set of benchmarks, [topping the leaderboards](https://github.com/Oloren-AI/OCE-TDC) on Therapeutic Data Commons, and are releasing a website as well: benchmarks.chemengine.org. On that site, we will benchmark models created by Oloren ChemEngine on relevant datasets. We are still in the process of migrating past experiments.
