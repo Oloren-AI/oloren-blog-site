@@ -4,7 +4,7 @@ date: 2022-09-22 00:00:00
 layout: post
 excerpt: In this post we explore our new benchmark site, which provides directly reproducible benchmarks with OCE model parameter strings.
 toc: false
-author: Andy Zhu
+author: David Huang
 featured_image: https://images.unsplash.com/photo-1579407364450-481fe19dbfaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80
 ---
 
