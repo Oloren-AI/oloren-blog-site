@@ -2091,12 +2091,13 @@ body[dir="rtl"] .checkbox:checked,
   background: linear-gradient(var(--a), #0D57ED 40.77%, #6843D8 82.17%);
 }
 
-.oloren-gradient>div:hover {
+.outline-button:hover {
   transition-timing-function: ease-in-out;
   transition: 0.5s;
   color: white;
   background: rgba(51, 170, 51, 0)
 }
+
 
 .oloren-gradient:hover {
   --a: 350deg;
