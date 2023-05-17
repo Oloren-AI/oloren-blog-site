@@ -10,15 +10,14 @@ layout: default
     <div class="space-y-5 py-16 lg:space-y-12 lg:py-60">
       <div id="hero-text" class="w-full space-y-5 pr-4">
         <h1 class="w-full text-4xl font-normal text-primary lg:w-[73%]">
-          Machine learning platform for  <b class="font-semibold">drug discovery.</b> Fueled by science, engineered for results.
+          Workflow Orchestration for <b class="font-semibold">sciences.</b> Fueled by research, engineered for results.
         </h1>
 
         <h2 class="w-full text-lg text-secondary lg:w-[73%]">
-          Systems built with reproducibility, interpretability, and performance
-          in mind. Build models with state-of-the-art molecular representations and
-          model architectures that can be saved, loaded, and shared in a moment.
-          Plus a suite of interpretability tools for analysis, all integrated in 
-          one unified Orchestration layer.
+          Science is a creative act that requires disciplined practice. Creativity is 
+          <i>hard</i> - discipline is <i>orchestratable</i>. Oloren unlocks creativity by
+          engineering systems with composibility, stability, and flexibility in mind, letting 
+          scientists focus on what they do best - science. 
         </h2>
       </div>
       <div class="space-x-8">
@@ -39,59 +38,25 @@ layout: default
     <div
       class="m-auto flex w-full flex-col justify-between space-y-8 px-5 md:max-w-7xl lg:w-3/4 lg:flex-row"
     >
-      <h2 class="text-2xl font-medium">Technology</h2>
+      <h2 class="text-2xl font-medium">Orchestrator System</h2>
       <div class="flex w-full flex-col space-y-8 lg:w-1/2">
         <div class="flex flex-col space-y-4">
-          <h3 class="text-lg font-semibold">ChemEngine</h3>
+          <h3 class="text-lg font-semibold">Graph Editor</h3>
           <p class="text-lg text-secondary">
-            A open-source library for molecular property prediction. Designed for individuals, academia,
-            and small teams, ChemEngine aggregates industry-leading research into a unified framework
-            that achieves top tier performance on open benchmarks. Visualizations and interpretability
-            tools enable scientists to derive real insights.
+            A visual interface for building workflows. Begin by loading up Oloren's 
+            suite of extensions, and then easily drag, drop, and connect nodes to 
+            compose your computational workflow. If you're a developer, you can build 
+            your own custom extensions and add them to the editor. Otherwise, no code required!
           </p>
-          <div
-            class="flex flex-col space-y-2 child:h-fit child:w-fit child:rounded-xl lg:flex-row lg:items-center lg:space-y-0 lg:space-x-3"
-          >
-            <a
-              class="olorengradient p-px"
-              href="https://chemengine.org"
-              target="_blank"
-            >
-              <div class="outline-button flex flex-row rounded-[11px] bg-[#F6F9FE] px-6 py-3">
-                Visit Site
-                <i data-feather="arrow-up-right" class="pl-2"></i>
-              </div>
-            </a>
-            <a
-              class="olorengradient p-px"
-              href="https://chemrxiv.org/engage/chemrxiv/article-details/6350b9d186473a47d31a8492"
-              target="_blank"
-            >
-              <div class="outline-button flex flex-row rounded-[11px] bg-[#F6F9FE] px-6 py-3">
-                Download Paper
-                <i data-feather="download" class="pl-2"></i>
-              </div>
-            </a>
-          </div>
         </div>
         <div class="flex flex-col space-y-4">
-          <h3 class="text-lg font-semibold">OlorenVec Descriptors</h3>
+          <h3 class="text-lg font-semibold">AWS Integration</h3>
           <p class="text-lg text-secondary">
-            Our state-of-the-art molecular descriptor built with supervised contrastive learning.
-            It leverages the information from millions of publicly curated datasets into a singular
-            molecular representation, guaranteed to improve performance on ADMET prediction tasks.
-            OlorenVec can also be finetuned on large internal datasets for even better performance.
+            Orchestrator leverages the capabilities of AWS, enabling workflows to run 
+            seamlessly on the cloud. Simplify the management of billing, compute resources, 
+            and users effortlessly. Achieve optimal workflow management and efficiency without 
+            unnecessary complexities.
           </p>
-          <div
-            class="flex flex-col space-y-2 space-x-3 child:h-fit child:w-fit child:rounded-xl lg:flex-row"
-          >
-            <a class="olorengradient p-px" href="https://oloren-blogcontent.s3.us-east-2.amazonaws.com/olorenvec.pdf" target="_blank">
-              <div class="outline-button flex flex-row rounded-[11px] bg-[#F6F9FE] px-6 py-3">
-                Download Presentation
-                <i data-feather="download" class="pl-2"></i>
-              </div>
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -102,7 +67,7 @@ layout: default
       class="m-auto flex w-full flex-col justify-between space-y-8 px-5 md:max-w-7xl lg:w-3/4 lg:flex-row"
     >
       <div class="flex w-full flex-col space-y-3 lg:w-1/3">
-        <h2 class="text-2xl font-medium">Products</h2>
+        <h2 class="text-2xl font-medium">Extensions</h2>
       </div>
       <div
         class="flex w-full flex-col space-y-10 child:flex child:flex-col child:space-y-4 lg:w-1/2"
@@ -110,34 +75,50 @@ layout: default
         <div>
           <img src="{{ "/assets/images/techicon.svg" | relative_url }}"
           class="h-10 w-10 p-0 m-0" align="left" id="logo" />
-          <h3 class="text-lg font-semibold">ChemEngine Enterprise</h3>
+          <h3 class="text-lg font-semibold">Basics</h3>
           <p class="text-lg text-secondary">
-            Designed to integrate well in teams. AutoML for selecting the best model.
-            Powerpoint integration to share visualizations. Dedicated support, feature
-            development, and ML Ops to make using ChemEngine as easy as possible.
+            The all-in-one toolkit to get started building with Oloren Orchestrator. Integrating 
+            Google APIs, OpenAI Text Completion APIs, PDF parsing, data manipulation, 
+            JSON capabilities, and more, the Basics extension equips you with essential building 
+            blocks for powerful applications.
           </p>
-          <a
-            class="flex flex-row text-lg font-medium"
-            href="mailto:contact@oloren.ai"
-            >Contact Us <i data-feather="arrow-up-right" class="ml-1"></i>
-          </a>
         </div>
 
         <div>
           <img src="{{ "/assets/images/techicon.svg" | relative_url }}"
           class="h-10 w-10 p-0 m-0" align="left" id="logo" />
-          <h3 class="text-lg font-semibold">Oloren Orchestrator</h3>
+          <h3 class="text-lg font-semibold">ChemEngine</h3>
           <p class="text-lg text-secondary">
-            Working within Oloren Orchestrator is intuitive and seamless. Create 
-            computational workflows, share across teams, and export to GUIs/APIs 
-            for maximum flexibility. Orchestrator ties disparate tools in a unified 
-            framework, eliminating integration downtime.
+            ChemEngine is an open-source molecular property prediction library we developed 
+            to deliver high-performance results on open benchmarks. It integrates seamlessly into 
+            teams, provides visualizations for interpretability, offers AutoML for model selection, and
+            Powerpoint integration for sharing visualizations. When used with Oloren Orchestrator, 
+            ChemEngine enables reproducible, interpretable, and high-performance property prediction workflows.
           </p>
+          <div
+          class="flex flex-col space-y-2 child:h-fit child:w-fit child:rounded-xl lg:flex-row lg:items-center lg:space-y-0 lg:space-x-3"
+        >
           <a
-            class="flex flex-row text-lg font-medium"
-            href="mailto:contact@oloren.ai"
-            >Contact Us <i data-feather="arrow-up-right" class="ml-1"></i>
+            class="olorengradient p-px"
+            href="https://chemengine.org"
+            target="_blank"
+          >
+            <div class="outline-button flex flex-row rounded-[11px] bg-[#F6F9FE] px-6 py-3">
+              Visit Site
+              <i data-feather="arrow-up-right" class="pl-2"></i>
+            </div>
           </a>
+          <a
+            class="olorengradient p-px"
+            href="https://chemrxiv.org/engage/chemrxiv/article-details/6350b9d186473a47d31a8492"
+            target="_blank"
+          >
+            <div class="outline-button flex flex-row rounded-[11px] bg-[#F6F9FE] px-6 py-3">
+              Download Paper
+              <i data-feather="download" class="pl-2"></i>
+            </div>
+          </a>
+        </div>
         </div>
       </div>
     </div>
