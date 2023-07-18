@@ -3023,6 +3023,6 @@ img {
     padding-left: 20px;
   }
 
-#examples ul li {
-    color: #3490dc; 
+#examples ul li:before {
+    color: #1C62E7; 
   }
